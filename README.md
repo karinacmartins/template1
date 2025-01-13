@@ -4,7 +4,7 @@ Este é um template moderno e responsivo criado para profissionais liberais, aut
 
 ## 🖥️ Demonstração
 
-Acesse a aplicação hospedada clicando [aqui](https://template1.vercel.app).  
+Acesse a aplicação hospedada clicando [aqui](https://template1-fisioterapia.vercel.app/).  
 Ou abra o arquivo `index.html` localmente no navegador para visualização offline.
 
 ---
