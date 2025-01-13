@@ -1,0 +1,33 @@
+/* Importação de arquivos CSS */
+@import url(_colors.css); /* Importa o arquivo com as definições de cores */
+@import url(reset.css); /* Importa o arquivo de reset para normalizar estilos entre navegadores */
+@import url(header.css); /* Importa o arquivo de estilo para o cabeçalho */
+@import url(menu.css); /* Importa o arquivo de estilo para o menu */
+@import url(about.css); /* Importa o arquivo de estilo para a seção "Sobre" */
+@import url(services.css); /* Importa o arquivo de estilo para a seção de serviços */
+@import url(depoimentos.css); /* Importa o arquivo de estilo para a seção de depoimentos */
+@import url(contato.css); /* Importa o arquivo de estilo para a seção de contato */
+@import url(rodape.css); /* Importa o arquivo de estilo para o rodapé */
+@import url(responsividade.css); /* Importa o arquivo de estilo para a responsividade */
+
+/* Estilo do corpo da página */
+body {
+    font-family: 'Montserrat', sans-serif; /* Define a fonte do corpo como Montserrat, com fallback para sans-serif */
+    line-height: 1.6; /* Define o espaçamento entre linhas */
+    color: var(--text-color); /* Define a cor do texto utilizando a variável de cor */
+    background-color: var(--white-color); /* Define a cor de fundo utilizando a variável de cor */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

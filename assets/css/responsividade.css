@@ -1,0 +1,91 @@
+/* Responsividade para telas menores */
+
+@media screen and (max-width: 768px) {
+
+    /* Carrossel - Exibe 2 itens por vez em telas menores */
+    .carousel-item {
+        flex: 0 0 calc((100% / 2) - 15px); /* Exibe 2 itens por vez, ajustando o cálculo para espaço entre os itens. */
+        max-width: calc((100% / 2) - 15px); /* Define a largura máxima dos itens do carrossel. */
+    }
+
+    /* Seção Sobre - Ajusta a largura para 100% */
+    .about {
+        width: 100%; /* Garante que o bloco ocupe toda a largura disponível. */
+    }
+
+    /* Seção Sobre Textos - Ajusta layout para coluna */
+    .sobre-text {
+        flex-direction: column; /* Organiza os elementos na vertical. */
+        justify-content: center; /* Centraliza verticalmente o conteúdo. */
+        width: 100%; /* Garante que ocupe toda a largura disponível. */
+    }
+
+    /* Título - Ajuste para um layout de linha e ajusta o espaçamento */
+    .title {
+        display: flex; /* Utiliza o layout flexível */
+        flex-direction: row; /* Organiza os itens na horizontal */
+        justify-content: space-around; /* Espaça uniformemente os itens */
+        align-items: center; /* Alinha os itens verticalmente ao centro */
+        width: 100%; /* Largura máxima */
+        font-size: 1.5rem; /* Ajusta o tamanho da fonte */
+        padding-top: 50px; /* Adiciona espaçamento no topo */
+    }
+    
+    /* Descrição - Ajusta a largura e o alinhamento do texto */
+    .description {
+        width: 100%; /* Largura completa */
+        padding: 5px; /* Espaçamento interno */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    /* Tamanho do título no cabeçalho em telas menores */
+    header h1 {
+        font-size: 2rem; /* Ajusta o tamanho da fonte do título */
+    }
+
+    /* Menu lateral - Ajusta a largura para 50% */
+    .menu-lateral {      
+        width: 50%; /* Reduz a largura do menu lateral */
+    }
+
+    /* Contato - Ajusta a largura do container para 90% */
+    .contato-container {
+        width: 90%; /* Garante que ocupe 90% da tela */
+    }
+
+    /* Modal - Ajuste no padding */
+    .modal {
+        padding-top: 150px; /* Ajusta o espaçamento superior */
+    }
+
+    /* Botão do WhatsApp - Ajusta o tamanho do botão */
+    .whatsapp-btn {
+        width: 50px; /* Reduz o tamanho do botão */
+        height: 50px; /* Reduz a altura do botão */
+    }
+}
+
+/* Responsividade para telas muito pequenas */
+@media screen and (max-width: 480px) {
+    
+    /* Carrossel - Exibe 1 item por vez em telas muito pequenas */
+    .carousel-item {       
+        flex: 0 0 100%; /* Exibe 1 item por vez */
+        max-width: 100%; /* Garante que ocupe toda a largura disponível */
+    }
+
+    /* Depoimentos - Ajusta a margem */
+    #depoimentos {
+        margin: 0 auto; /* Centraliza os depoimentos */
+    }
+
+    /* Menu lateral - Ajusta a largura para 75% */
+    .menu-lateral {      
+        width: 75%; /* Reduz a largura do menu lateral */
+    }
+
+    /* Formulário de Contato - Ajusta a largura do formulário */
+    #contact-form {
+        width: 100%; /* Garante que ocupe toda a largura disponível */
+    }
+}

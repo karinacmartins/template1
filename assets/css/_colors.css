@@ -1,0 +1,11 @@
+/* Paleta de cores */
+
+:root {
+    --primary-color: #803253;  /* Cor principal */
+    --secondary-color: #b47c93;  /* Cor secundária */
+    --white-color: #f8f8f8;  /* Cor Branca */
+    --highlight-color: #555; /* Cor de destaque (ex: botões ou links) */
+    --text-color: #333; /* Cor para textos ou botões */
+    --link-color: #7488ff;  /* Cor para links */
+    --opacity-color: #ffffff52 /*Transparente*/
+}

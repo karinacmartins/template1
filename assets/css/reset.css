@@ -1,0 +1,6 @@
+/* Reset: Remove margens, preenchimentos e define o box-sizing para todos os elementos */
+* {
+    margin: 0; /* Remove todas as margens padrão dos elementos */
+    padding: 0; /* Remove todo o preenchimento padrão dos elementos */
+    box-sizing: border-box; /* Faz com que o padding e a borda sejam incluídos nas dimensões dos elementos */
+}

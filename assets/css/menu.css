@@ -1,0 +1,92 @@
+/* Estilos para o menu principal */
+.menu {
+    position: fixed; /* O menu permanece fixo na tela ao rolar a página */
+    z-index: 1001; /* Define a prioridade de exibição do menu */
+    top: 10px; /* Posiciona o menu a 10px do topo da tela */
+    left: 10px; /* Posiciona o menu a 10px do lado esquerdo da tela */
+}
+
+/* Estilos para o botão do menu */
+.menu-btn {    
+    position: fixed; /* O botão permanece fixo na tela */
+    font-size: 2rem; /* Define o tamanho da fonte para o botão */
+    cursor: pointer; /* Altera o cursor para uma mãozinha ao passar sobre o botão */
+    z-index: 1002; /* Define prioridade maior para o botão sobre outros elementos */
+    padding: 5px 10px; /* Adiciona espaçamento interno ao botão */
+    margin: 5px; /* Adiciona espaçamento externo ao botão */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    border: 0px; /* Remove a borda do botão */
+    color: var(--primary-color); /* Define a cor do texto do botão */
+    background: var(--opacity-color); /* Define a cor de fundo com opacidade */
+    transition: all 0.3s ease; /* Adiciona transição suave para as mudanças */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao botão */
+}
+
+/* Estilos para o menu lateral */
+.menu-lateral {
+    width: 30%; /* Define a largura do menu lateral como 30% da tela */
+    position: fixed; /* O menu lateral permanece fixo na tela */
+    top: 0; /* Alinha o menu ao topo da tela */
+    text-align: center; /* Centraliza o texto dentro do menu */
+    left: -100%; /* Oculta o menu fora da tela inicialmente */
+    padding: 70px 70px; /* Adiciona espaçamento interno ao menu */
+    height: auto; /* Permite altura variável conforme o conteúdo */
+    z-index: 1000; /* Define a prioridade de exibição do menu lateral */
+    transition: transform 0.2s ease, left 0.2s ease; /* Adiciona transições suaves para movimentação */
+    overflow-y: auto; /* Permite rolagem vertical se o conteúdo exceder a altura */
+    background-color: var(--secondary-color); /* Define a cor de fundo do menu */
+    border-radius: 10px 0; /* Adiciona bordas arredondadas à esquerda */
+    border: var(--primary-color) 1px solid; /* Adiciona uma borda sólida ao menu */
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao menu */
+}
+
+/* Classe para ativar o menu lateral */
+.menu-lateral.active {
+    left: 0; /* Move o menu para dentro da tela quando ativado */
+}
+
+/* Estilos para a lista dentro do menu lateral */
+.menu-lateral ul {
+    list-style: none; /* Remove os marcadores padrão da lista */
+    text-decoration: none; /* Remove sublinhado padrão */
+    margin: 0; /* Remove margens externas */
+    padding: 0; /* Remove espaçamentos internos */
+}
+
+/* Estilos para os itens da lista */
+.menu-lateral li {
+    margin-bottom: 15px; /* Adiciona espaçamento entre os itens */
+    list-style: none; /* Remove os marcadores dos itens */
+}
+
+/* Remove o espaçamento do último item da lista */
+.menu-lateral li:last-child {
+    margin-bottom: 0;
+}
+
+/* Estilos para os links dentro do menu lateral */
+.menu-lateral a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    background-color: var(--opacity-color); /* Define a cor de fundo com opacidade */
+    width: auto; /* Define largura automática conforme o conteúdo */
+    color: var(--primary-color); /* Define a cor do texto */
+    font-size: 1rem; /* Define o tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+    display: block; /* Faz o link ocupar toda a largura do bloco */
+    padding: 10px 15px; /* Adiciona espaçamento interno */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona transição suave */
+}
+
+/* Efeito de hover nos links do menu lateral */
+.menu-lateral a:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+    background-color: var(--primary-color); /* Altera a cor de fundo */
+    color: var(--white-color); /* Altera a cor do texto */
+}
+
+/* Efeito de hover nos botões */
+button:hover {   
+    transform: translateY(-2px); /* Move o botão ligeiramente para cima */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+}

@@ -1,0 +1,22 @@
+footer {
+    background-color: var(--primary-color); /* Define a cor de fundo do rodapé, utilizando a variável primária. */
+    color: var(--white-color); /* Define a cor do texto como branca para contraste com o fundo. */
+    text-align: center; /* Centraliza o conteúdo no rodapé. */
+    padding: 10px; /* Adiciona espaçamento interno ao rodapé. */
+    font-size: 1em; /* Define o tamanho da fonte como padrão. */
+}
+
+footer p {
+    margin: 0; /* Remove qualquer margem ao redor do parágrafo para alinhamento uniforme. */
+    font-size: small; /* Define o tamanho do texto do parágrafo como pequeno. */
+}
+
+footer a {
+    color: var(--link-color); /* Aplica uma cor específica para os links no rodapé, utilizando a variável correspondente. */
+    text-decoration: none; /* Remove o sublinhado padrão dos links. */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Adiciona um sublinhado ao link quando o mouse passa por cima. */
+    color: var(--opacity-color); /* Altera a cor do link ao passar o mouse, para destacar a interação. */
+}

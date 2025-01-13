@@ -1,0 +1,80 @@
+/* Seção de Depoimentos */
+#depoimentos {
+    display: flex; /* Define o layout flexível */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    background-color: var(--white-color); /* Define a cor de fundo como branco */
+    padding: 40px 20px; /* Define espaçamento interno (superior/inferior e laterais) */
+    text-align: center; /* Centraliza o texto */
+    width: 100%; /* Define a largura total da seção */
+}
+
+/* Estilo do título da seção de depoimentos */
+#depoimentos h2 {
+    font-size: 2.5rem; /* Define o tamanho da fonte */
+    margin-bottom: 30px; /* Adiciona margem inferior */
+    color: var(--primary-color); /* Define a cor do texto do título */
+}
+
+/* Contêiner dos depoimentos */
+.depoimentos-container {
+    position: relative; /* Permite posicionamento absoluto dos depoimentos */
+    width: 300px; /* Define a largura do contêiner */
+    height: 200px; /* Define a altura do contêiner */
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse o contêiner */
+    margin: auto; /* Centraliza o contêiner horizontalmente */
+}
+
+/* Estilo individual de cada depoimento */
+.testimonial {
+    position: absolute; /* Posicionamento absoluto dentro do contêiner */
+    top: 0; /* Alinha ao topo do contêiner */
+    margin: 15px; /* Define margens internas */
+    left: 100%; /* Inicialmente posiciona o depoimento fora da tela à direita */
+    width: 90%; /* Define a largura do depoimento como 90% do contêiner */
+    height: 90%; /* Define a altura do depoimento como 90% do contêiner */
+    background-color: var(--secondary-color); /* Define a cor de fundo do depoimento */
+    border-radius: 50px 0 50px 0; /* Aplica cantos arredondados ao elemento */
+    padding: 20px; /* Define espaçamento interno */
+    box-shadow: black 6px 0 6px 0; /* Adiciona sombra ao redor do elemento */
+    display: flex; /* Usa layout flexível */
+    flex-direction: column; /* Organiza itens em uma coluna */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    transition: transform 3s ease, left 1s ease, opacity 1s ease; /* Adiciona transições suaves para transformação, posição e opacidade */
+    opacity: 0; /* Define o elemento inicialmente invisível */
+}
+
+/* Estilo do depoimento ativo (visível) */
+.testimonial.active {
+    left: 0; /* Posiciona o depoimento no centro da tela */
+    opacity: 1; /* Torna o depoimento visível (valor máximo de opacidade) */
+    transform: translateX(0); /* Remove qualquer transformação horizontal */
+}
+
+
+/* Estilo do depoimento oculto (sai pela esquerda) */
+.testimonial.hidden {
+    left: -100%; /* Move o depoimento completamente para fora da tela à esquerda */
+    opacity: 0; /* Torna o depoimento invisível */
+    transform: translateX(-100%); /* Adiciona uma transformação para reforçar o movimento à esquerda */
+}
+
+
+/* Estilo do texto dentro de cada depoimento */
+.testimonial p {
+    margin: 10px 0; /* Adiciona margens superior e inferior */
+    font-size: 1.1em; /* Define o tamanho da fonte */
+}
+
+/* Estilo do primeiro parágrafo (normalmente o texto do depoimento) */
+.testimonial p:first-child {
+    font-style: italic; /* Aplica estilo itálico ao texto */
+    color: var(--white-color); /* Define a cor do texto */
+}
+
+/* Estilo do último parágrafo (normalmente o nome ou cargo do autor do depoimento) */
+.testimonial p:last-child {
+    font-weight: bold; /* Aplica negrito ao texto */
+    color: var(--primary-color); /* Define a cor do texto */
+}

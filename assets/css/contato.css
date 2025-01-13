@@ -1,0 +1,147 @@
+/* Seção de Contato */
+#contato {
+    background-color: var(--primary-color); /* Define a cor de fundo igual à usada em serviços */
+    padding: 10px; /* Espaçamento interno */
+    color: var(--white-color); /* Define a cor do texto */
+    text-align: center; /* Centraliza o texto */
+}
+
+#contato h2 {
+    font-size: 2.5rem; /* Tamanho do título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+/* Contêiner principal da seção de contato */
+.contato-container {
+    display: flex; /* Usa layout flexível */
+    flex-direction: column; /* Organiza os itens em coluna */
+    margin: 10px auto; /* Centraliza o contêiner */
+    width: 50%; /* Largura do contêiner */
+    text-align: left; /* Alinha o texto à esquerda */
+    gap: 5px; /* Espaçamento entre os elementos */
+    font-size: 1em; /* Define o tamanho da fonte */
+    color: var(--text-color); /* Cor padrão do texto */
+}
+
+.contato-container p {
+    color: var(--white-color); /* Define a cor do texto */
+}
+
+/* Estilo do formulário de contato */
+#contact-form {
+    display: flex; /* Usa layout flexível */
+    flex-direction: column; /* Organiza os itens em coluna */
+    gap: 10px; /* Espaçamento entre os campos */
+    width: 50%; /* Define a largura do formulário */
+    margin: 0 auto; /* Centraliza o formulário */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilo para os rótulos (labels) */
+#contact-form label {
+    font-size: 1rem; /* Define o tamanho do texto do rótulo */
+    margin-bottom: 5px; /* Espaço abaixo do rótulo */
+}
+
+/* Estilo para campos de entrada (input e textarea) */
+#contact-form input,
+#contact-form textarea {
+    width: 100%; /* Define largura total */
+    padding: 10px; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho do texto */
+    border: 1px solid var(--highlight-color); /* Borda com cor de destaque */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+/* Botões do formulário */
+.buttons {
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    gap: 5px; /* Espaçamento entre botões */
+    width: 100%; /* Largura total */
+}
+
+/* Estilo para o botão */
+#contact-form button {
+    padding: 10px; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    width: 40%; /* Define largura do botão */
+    background-color: var(--opacity-color); /* Cor de fundo do botão */
+    color: var(--text-color); /* Cor do texto do botão */
+    border: none; /* Remove bordas */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Indica clicável */
+    transition: background-color 0.3s ease; /* Transição suave para mudança de cor */
+}
+
+/* Efeito ao passar o mouse no botão */
+#contact-form button:hover {
+    background-color: var(--highlight-color); /* Cor de fundo ao passar o mouse */
+    color: var(--white-color); /* Cor do texto ao passar o mouse */
+}
+
+/* Ícones no contêiner de contato */
+.contato-container img {   
+    width: 24px; /* Define largura do ícone */
+    height: 24px; /* Define altura do ícone */
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+
+/* Links no contêiner de contato */
+.contato-container a {
+    text-decoration: none; /* Remove sublinhado */
+    color: var(--link-color); /* Cor do link */    
+}
+
+/* Efeito ao passar o mouse no link */
+.contato-container a:hover {
+    color: var(--opacity-color); /* Cor ao passar o mouse no link */
+}
+
+/* Botão flutuante do WhatsApp */
+.whatsapp-btn {
+    position: fixed; /* Fixa o botão na tela */
+    bottom: 20px; /* Define distância da parte inferior */
+    right: 20px; /* Define distância da lateral direita */
+    width: 60px; /* Tamanho do botão */
+    height: 60px; /* Altura do botão */
+    z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+    background-color: #25d366; /* Cor padrão do WhatsApp */
+    border-radius: 50%; /* Forma de círculo */
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ao redor */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+    animation: vibrate-interval 3s ease-in-out infinite; /* Animação de vibração contínua */
+}
+
+/* Estilo do ícone dentro do botão WhatsApp */
+.whatsapp-btn img {
+    width: 70%; /* Ajusta tamanho do ícone */
+    height: 70%; /* Ajusta tamanho do ícone */
+}
+
+/* Animação de vibração para o botão */
+@keyframes vibrate-interval {
+    0%, 100% {
+        transform: translate(0, 0); /* Posição inicial e final */
+    }
+    10% {
+        transform: translate(-3px, 0); /* Movimento para a esquerda */
+    }
+    20% {
+        transform: translate(3px, 0); /* Movimento para a direita */
+    }
+    30% {
+        transform: translate(-3px, 0); /* Movimento para a esquerda */
+    }
+    40% {
+        transform: translate(3px, 0); /* Movimento para a direita */
+    }
+    /* Intervalo entre vibrações */
+    50%, 100% {
+        transform: translate(0, 0); /* Retorna à posição original */
+    }
+}

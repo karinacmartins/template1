@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- Define o idioma principal da página como português do Brasil, importante para a acessibilidade, especialmente para leitores de tela. -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres para garantir que todos os caracteres especiais sejam exibidos corretamente. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Responsabilidade em dispositivos móveis, garantindo que o conteúdo seja redimensionado adequadamente. -->
+    <title>Gabriela Lima - Fisioterapeuta</title> <!-- Título da página, importante para SEO e leitores de tela. -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/logofisio.png" type="image/x-icon">
+    <!-- Ícone da página, aparece na aba do navegador, facilitando a navegação. -->
+
+    <!-- Fonte Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Inclusão de fonte personalizada para uma melhor leitura e estética. -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Inclusão do arquivo de estilos CSS para a formatação visual da página. -->
+</head>
+
+
+<body>
+    <header>
+        <!-- Cabeçalho da página -->
+        <h1>Transformamos dor em força, movimento em liberdade.</h1>
+        <!-- Título principal da página, importante para SEO e para descrever o serviço de forma clara e objetiva. -->
+    </header>
+
+    <div class="logo">
+        <!-- Seção para o logotipo da página -->
+        <img src="assets/images/logo.png" alt="Logo Gabriela Lima" class="logo">
+        <!-- Imagem do logotipo com o atributo 'alt' descrevendo a imagem para usuários de leitores de tela. -->
+    </div>
+
+    <nav class="menu">
+        <!-- Navegação do menu -->
+        <button class="menu-btn" aria-label="Abrir menu">☰</button>
+        <!-- Botão para abrir o menu, o 'aria-label' descreve sua função para leitores de tela. -->
+        <ul class="menu-lateral" id="menu-lateral">
+            <li><a href="#" aria-label="Ir para a página inicial">Início</a></li>
+            <!-- Link para a página inicial, 'aria-label' facilita a navegação para usuários de leitores de tela. -->
+            <li><a href="#about" aria-label="Ir para a seção Sobre">Sobre</a></li>
+            <!-- Link para a seção Sobre, 'aria-label' para descrever seu destino. -->
+            <li><a href="#services" aria-label="Ir para a seção Especialidades">Especialidades</a></li>
+            <!-- Link para a seção de Especialidades. -->
+            <li><a href="#depoimentos" aria-label="Ir para a seção Depoimentos">Depoimentos</a></li>
+            <!-- Link para a seção de Depoimentos. -->
+            <li><a href="#contato" aria-label="Ir para a seção Contato">Contato</a></li>
+            <!-- Link para a seção de Contato. -->
+        </ul>
+    </nav>
+
+
+    <section class="about" id="about">
+        <!-- Seção "Sobre", contém informações sobre a fisioterapeuta Gabriela Lima -->
+        <div class="sobre-container">
+            <!-- Container que envolve a imagem e o texto da seção "Sobre" -->
+
+            <div class="sobre-image">
+                <!-- Container da imagem de perfil -->
+                <img src="assets/images/perfil-exemplo.jpg" alt="Foto de perfil de Gabriela Lima, fisioterapeuta">
+                <!-- Descrição da imagem de perfil com o atributo 'alt' para leitores de tela. -->
+            </div>
+
+            <div class="line"></div>
+            <!-- Linha separadora entre imagem e texto -->
+
+            <div class="sobre-text">
+                <!-- Container do texto descritivo -->
+                <div class="title">
+                    <!-- Título da seção -->
+                    <h2>Sobre</h2> <!-- Título principal da seção. -->
+                    <h2>Mim</h2> <!-- Subtítulo, complementando a informação. -->
+                </div>
+
+                <div class="description">
+                    <!-- Descrição do conteúdo -->
+                    <p>
+                        Olá, sou Gabriela Lima, fisioterapeuta com formação sólida e especializada em promover saúde e
+                        bem-estar. Com 3 anos de experiência no campo da fisioterapia, desenvolvi uma abordagem centrada
+                        no paciente, buscando sempre oferecer tratamentos personalizados e eficazes. Minha missão é
+                        ajudar cada pessoa a atingir seu equilíbrio físico e emocional, proporcionando alívio e
+                        qualidade de vida, com um atendimento humanizado e baseado em evidências científicas.
+                    </p> <!-- Parágrafo descrevendo a trajetória e missão de Gabriela Lima. -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="services" id="services">
+        <!-- Seção "Especialidades", que apresenta os serviços de fisioterapia oferecidos -->
+
+        <div class="top-services">
+            <!-- Cabeçalho da seção, destacando o título "Especialidades" -->
+            <h2>Especialidades</h2> <!-- Título que define o conteúdo da seção -->
+        </div>
+
+        <div class="services-carousel-container">
+            <!-- Container do carrossel de especialidades -->
+
+            <div class="carousel services-carousel">
+                <!-- Carrossel de itens de especialidades, cada item é um serviço oferecido -->
+
+                <div class="carousel-item"
+                    onclick="openModal('Fisioterapia Esportiva', 'Atendimento especializado focado na saúde e desempenho de atletas e praticantes de atividades físicas, abrangendo prevenção, diagnóstico e tratamento de lesões relacionadas ao esporte. A fisioterapia esportiva inclui técnicas como fortalecimento muscular, reabilitação funcional, análise biomecânica e desenvolvimento de programas personalizados de exercícios. O objetivo é otimizar o desempenho esportivo, prevenir lesões recorrentes, acelerar a recuperação após traumas ou cirurgias, e proporcionar suporte para o retorno seguro às atividades físicas, sempre respeitando as necessidades e metas individuais de cada paciente.')">
+                    <!-- Item do carrossel  -->
+                    <img src="assets/images/serviços/fisioesportiva.jpg"
+                        alt="Imagem ilustrativa de Fisioterapia Esportiva.">
+                    <!-- Imagem que ilustra o serviço. -->
+                    <p>Fisioterapia Esportiva</p> <!-- Nome do serviço -->
+                </div>
+
+                <div class="carousel-item"
+                    onclick="openModal('Reabilitação Pós-Cirúrgica', 'Processo essencial para restaurar a funcionalidade e qualidade de vida após procedimentos cirúrgicos. Envolve a aplicação de técnicas personalizadas, como exercícios terapêuticos, mobilizações articulares, fortalecimento muscular e controle da dor, visando acelerar a recuperação, minimizar complicações e prevenir aderências ou perda de mobilidade. A reabilitação pós-cirúrgica é adaptada ao tipo de cirurgia e às condições individuais do paciente, sendo amplamente aplicada em casos ortopédicos, neurológicos, cardiovasculares e oncológicos. O foco está na recuperação segura, no retorno às atividades diárias e na promoção da independência funcional.')">
+                    <!-- Item do carrossel  -->
+                    <img src="assets/images/serviços/fisiocirurgica.jpg" alt="Reabilitação Pós-Cirúrgica">
+                    <!-- Imagem que ilustra o serviço. -->
+                    <p>Reabilitação Pós-Cirúrgica</p> <!-- Nome do serviço -->
+                </div>
+                <div class="carousel-item"
+                    onclick="openModal('Terapia Manual', 'Conjunto de técnicas avançadas que utilizam as mãos para avaliar, tratar e melhorar as disfunções musculoesqueléticas. A terapia manual inclui manipulações, mobilizações articulares, alongamentos específicos e liberação miofascial, visando aliviar dores, reduzir tensões musculares, corrigir desalinhamentos articulares e melhorar a mobilidade. Essas técnicas são amplamente aplicadas em condições como lombalgia, cervicalgia, lesões esportivas e pós-operatórios, promovendo a restauração da funcionalidade e o bem-estar dos pacientes.')">
+                    <!-- Item do carrossel  -->
+                    <img src="assets/images/serviços/fisiomanual.jpg" alt="Terapia Manual">
+                    <!-- Imagem que ilustra o serviço. -->
+                    <p>Terapia Manual</p> <!-- Nome do serviço -->
+                </div>
+                <div class="carousel-item"
+                    onclick="openModal('Auriculoterapia', 'Terapia complementar que utiliza a estimulação de pontos específicos na orelha, considerada um microssistema do corpo humano, para tratar uma variedade de condições de saúde. Esses pontos são estimulados por meio de sementes, agulhas, esferas metálicas ou pressão manual, promovendo o equilíbrio energético e a melhora de sintomas como dores musculares, cefaleias, estresse, ansiedade, insônia e distúrbios digestivos. A auriculoterapia é amplamente utilizada como parte da Medicina Tradicional Chinesa e pode ser integrada a outros tratamentos, proporcionando uma abordagem holística e natural para o bem-estar do paciente.')">
+                    <!-- Item do carrossel  -->
+                    <img src="assets/images/serviços/auriculo.jpg" alt="Auriculoterapia">
+                    <!-- Imagem que ilustra o serviço. -->
+                    <p>Auriculoterapia</p> <!-- Nome do serviço -->
+                </div>
+                <div class="carousel-item"
+                    onclick="openModal('Drenagem Linfática', 'Técnica de massagem terapêutica que estimula o sistema linfático, responsável pela eliminação de toxinas e líquidos acumulados no corpo. A drenagem linfática utiliza movimentos suaves, rítmicos e precisos, favorecendo a redução de inchaços, melhorando a circulação sanguínea e linfática, e promovendo o relaxamento. É amplamente indicada em casos de retenção de líquidos, pós-operatórios, gestação, celulite e condições relacionadas a edemas. Além de seus benefícios estéticos, a técnica contribui para o fortalecimento do sistema imunológico e o bem-estar geral do paciente.')">
+                    <!-- Item do carrossel  -->
+                    <img src="assets/images/serviços/fisiomanual.jpg" alt="Drenagem Linfática">
+                    <!-- Imagem que ilustra o serviço. -->
+                    <p>Drenagem Linfática</p> <!-- Nome do serviço -->
+                </div>
+
+            </div>
+
+        </div>
+        <div class="botton-services">
+            <!-- Botões de navegação para o carrossel -->
+            <div class="carousel-controls">
+                <button onclick="scrollCarousel(-1)">&#10094;</button>
+                <button onclick="scrollCarousel(1)">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <!-- Modal para exibição de mais detalhes do serviço -->
+        <div id="serviceModal" class="modal">
+            <!-- Modal que contém informações detalhadas sobre o serviço escolhido -->
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span> <!-- Botão para fechar o modal -->
+                <h2 id="modalTitle"></h2> <!-- Título do modal (nome do serviço) -->
+                <p id="modalDescription"></p> <!-- Descrição detalhada do serviço -->
+                <p id="modalValor"></p> <!-- Valor do serviço (se for necessário incluir) -->
+            </div>
+    </section>
+
+    <section id="depoimentos">
+        <!-- Seção de depoimentos, onde são exibidas avaliações de clientes sobre os serviços prestados -->
+
+        <h2>Depoimentos</h2>
+        <!-- Título da seção, informando que os depoimentos dos clientes serão apresentados aqui -->
+
+        <div class="depoimentos-container">
+            <!-- Container que agrupa os depoimentos. Pode ser um layout flexível ou grid para exibição organizada -->
+
+            <div class="testimonial" id="testimonial1">
+                <!-- Depoimento 1: Avaliação de um cliente sobre o serviço -->
+                <p>"Excelente profissional! Me ajudou muito na minha recuperação."</p> <!-- Texto do depoimento -->
+                <p>- Ana Souza</p> <!-- Nome do cliente que deu o depoimento -->
+            </div>
+
+            <div class="testimonial" id="testimonial2">
+                <!-- Depoimento 2: Avaliação de outro cliente sobre o serviço -->
+                <p>"Recomendo a todos que buscam um atendimento humanizado e eficaz."</p> <!-- Texto do depoimento -->
+                <p>- João Santos</p> <!-- Nome do cliente que deu o depoimento -->
+            </div>
+
+            <div class="testimonial" id="testimonial3">
+                <!-- Depoimento 3: Avaliação de outro cliente sobre o serviço -->
+                <p>"Meu movimento foi totalmente restaurado após as sessões."</p> <!-- Texto do depoimento -->
+                <p>- Maria Oliveira</p> <!-- Nome do cliente que deu o depoimento -->
+            </div>
+
+        </div>
+
+        <div class="line2"></div>
+        <!-- Linha separadora (pode ser uma linha visual para demarcar a seção de depoimentos) -->
+    </section>
+
+
+    <section id="contato">
+        <!-- Seção de Contato, onde o usuário pode encontrar informações de contato e enviar uma mensagem -->
+
+        <a href="https://wa.me/5511999999999" class="whatsapp-btn" target="_blank"
+            aria-label="Enviar mensagem pelo WhatsApp">
+            <!-- Botão para abrir o WhatsApp, com link para enviar mensagem diretamente ao número informado -->
+            <img src="assets/images/icons/whatsapp.svg" alt="Ícone do WhatsApp">
+            <!-- Imagem representando o ícone do WhatsApp -->
+        </a>
+
+        <h2>Contato</h2> <!-- Título da seção, informando ao usuário que aqui estão as informações para contato -->
+
+        <div class="contato-container">
+            <!-- Container que agrupa as informações de contato -->
+
+            <p>
+                <img src="assets/images/icons/whatsapp.svg" alt="Ícone de WhatsApp">
+                <strong>Telefone:</strong> (11) 91234-1234
+            </p>
+            <!-- Informações de telefone, incluindo o ícone de WhatsApp -->
+
+            <p>
+                <img src="assets/images/icons/mail.svg" alt="Ícone de E-mail">
+                <strong>Email:</strong> fisi@fisio.com
+            </p>
+            <!-- Informações de e-mail, incluindo o ícone de e-mail -->
+
+            <p>
+                <img src="assets/images/icons/maps.svg" alt="Ícone de Endereço">
+                <strong>Endereço:</strong> Rua da Sorte, 123 - Jd Ouro - São Paulo - SP
+            </p>
+            <!-- Informações de endereço, com o ícone representando localização -->
+
+            <p>
+                <img src="assets/images/icons/linkedin.svg" alt="Ícone do LinkedIn">
+                <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/seuperfil/" target="_blank"
+                    aria-label="Visite meu perfil no LinkedIn">linkedin.com/in/seuperfil</a>
+            </p>
+            <!-- Link para o LinkedIn, com ícone e texto explicativo -->
+
+            <p>
+                <img src="assets/images/icons/download.svg" alt="Ícone de Download">
+                <strong>Download do Currículo:</strong> <a href="assets/aquivos/Currículo exemplo.pdf" download
+                    aria-label="Baixar currículo">Baixar Currículo</a>
+            </p>
+            <!-- Link para download do currículo, com ícone e texto explicativo -->
+        </div>
+
+        <form id="contact-form" aria-labelledby="contact-form-title">
+            <!-- Formulário de contato, com identificação para acessibilidade -->
+
+            <h3 id="contact-form-title" class="visually-hidden">Formulário de Contato</h3>
+            <!-- Título do formulário, acessível para leitores de tela, mas escondido visualmente -->
+
+            <label for="name">Nome:</label>
+            <!-- Rótulo para o campo de nome -->
+            <input type="text" id="name" name="name" required aria-required="true">
+            <!-- Campo de texto para o nome, com atributo "required" e "aria-required" para indicar que o campo é obrigatório -->
+
+            <label for="email">E-mail:</label>
+            <!-- Rótulo para o campo de e-mail -->
+            <input type="email" id="email" name="email" required aria-required="true">
+            <!-- Campo de texto para o e-mail, com atributo "required" e "aria-required" para indicar que o campo é obrigatório -->
+
+            <label for="message">Mensagem:</label>
+            <!-- Rótulo para o campo de mensagem -->
+            <textarea id="message" name="message" required aria-required="true"></textarea>
+            <!-- Campo de texto para a mensagem, com atributo "required" e "aria-required" para indicar que o campo é obrigatório -->
+
+            <div class="buttons">
+                <!-- Container para os botões -->
+
+                <button type="button" id="clear-btn" aria-label="Limpar o formulário">Limpar</button>
+                <!-- Botão para limpar o formulário, com "aria-label" para descrever sua função -->
+
+                <button type="submit" aria-label="Enviar mensagem">Enviar</button>
+                <!-- Botão para enviar o formulário, com "aria-label" para descrever sua função -->
+            </div>
+        </form>
+    </section>
+
+
+    <footer>
+        <!-- Seção de rodapé, contendo informações de direitos autorais e créditos -->
+        <p>&copy; 2024 Gabriela Lima. Todos os direitos reservados.</p>
+        <!-- Informações sobre direitos autorais, com o símbolo de copyright e ano -->
+
+        <p class="footer-text">By <a href="https://portfolio-pessoal-mocha.vercel.app/" target="_blank"
+                aria-label="Visite meu portfólio">KM</a></p>
+        <!-- Crédito para o desenvolvedor, com um link para o portfólio. O "aria-label" descreve a ação de clicar no link -->
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- Script para integração com o EmailJS, necessário para envio de formulários de e-mail -->
+
+    <script src="assets/js/mail.js"></script>
+    <!-- Script personalizado para lidar com o envio do formulário de contato -->
+
+    <script src="assets/js/script.js"></script>
+    <!-- Script personalizado para funcionalidades gerais no site -->
+
+
+
+</body>
+
+</html>

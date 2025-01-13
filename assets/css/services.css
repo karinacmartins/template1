@@ -1,0 +1,162 @@
+/* Estilo geral da seção "Services" */
+.services {
+    display: flex; /* Usa layout flexível */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    justify-content: center; /* Centraliza os elementos verticalmente */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+}
+
+/* Seção superior da "Services" */
+.top-services {
+    display: flex; /* Usa layout flexível */
+    align-items: end; /* Alinha os itens ao final verticalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    width: 100%; /* Ocupa toda a largura */
+    height: 100px; /* Define a altura */
+    background-color: var(--primary-color); /* Define a cor de fundo */
+    border-radius: 50% 50% 0 0; /* Adiciona bordas arredondadas somente no topo */
+}
+
+.top-services h2 {
+    display: flex; /* Usa layout flexível */
+    color: var(--white-color); /* Define a cor do texto como branco */
+    font-size: 2.5rem; /* Define o tamanho da fonte */
+    margin-bottom: 5px; /* Adiciona margem inferior */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+/* Seção inferior da "Services" */
+.botton-services {
+    width: 100%; /* Ocupa toda a largura */
+    height: 100px; /* Define a altura */
+    display: flex; /* Usa layout flexível */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    background-color: var(--primary-color); /* Define a cor de fundo */
+    border-radius: 0 0 50% 50%; /* Adiciona bordas arredondadas somente na parte inferior */
+}
+
+/* Contêiner do carrossel */
+.services-carousel-container {
+    width: 100%; /* Ocupa toda a largura */
+    background-color: var(--primary-color); /* Define a cor de fundo */
+    padding: 20px 0; /* Adiciona espaçamento interno vertical */
+}
+
+/* Carrossel */
+.services-carousel {
+    display: flex; /* Usa layout flexível */
+    gap: 30px; /* Espaço entre os itens */
+    overflow-x: auto; /* Adiciona rolagem horizontal */
+    scroll-behavior: smooth; /* Habilita rolagem suave */
+    padding: 20px; /* Espaçamento interno */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    width: 90%; /* Define a largura do carrossel */
+}
+
+.services-carousel::-webkit-scrollbar {
+    display: none; /* Esconde a barra de rolagem no navegador */
+}
+
+/* Item do carrossel */
+.carousel-item {
+    flex: 0 0 calc((100% / 3) - 20px); /* Mostra 3 itens por vez */
+    max-width: calc((100% / 3) - 20px); /* Limita a largura dos itens */
+    background-color: var(--white-color); /* Fundo branco */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 15px; /* Espaçamento interno */
+    cursor: pointer; /* Indica que o item é clicável */
+    text-align: center; /* Centraliza o texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    transition: transform 0.3s ease; /* Suaviza o efeito ao passar o mouse */
+}
+
+.carousel-item img {
+    width: 100%; /* Imagem ocupa toda a largura do item */
+    height: 250px; /* Define a altura fixa */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.carousel-item p {
+    margin-top: 10px; /* Margem superior */
+    font-size: 1.1em; /* Tamanho da fonte */
+    color: var(--primary-color); /* Cor do texto */
+}
+
+.carousel-item:hover {
+    transform: scale(1.05); /* Aumenta o item ao passar o mouse */
+}
+
+/* Controles do carrossel */
+.carousel-controls {
+    text-align: center; /* Centraliza os controles */
+    margin-top: 15px; /* Margem superior */
+}
+
+.carousel-controls button {
+    background-color: var(--white-color); /* Fundo branco */
+    color: var(--primary-color); /* Texto na cor primária */
+    border: none; /* Remove borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    margin: 5px; /* Margem entre os botões */
+    cursor: pointer; /* Indica que é clicável */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1em; /* Tamanho da fonte */
+}
+
+.carousel-controls button:hover {
+    background-color: var(--highlight-color); /* Muda o fundo ao passar o mouse */
+    color: var(--white-color); /* Texto branco */
+}
+
+/* Modal (janela modal) */
+.modal {
+    display: none; /* Esconde o modal por padrão */
+    position: fixed; /* Fixa a posição na tela */
+    z-index: 1000; /* Prioridade alta na exibição */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ocupa toda a largura */
+    height: 100%; /* Ocupa toda a altura */
+    overflow: auto; /* Habilita rolagem se necessário */
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
+}
+
+.modal-content {
+    background-color: var(--white-color); /* Fundo branco */
+    margin: 15% auto; /* Centraliza vertical e horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+    border: 2px solid var(--highlight-color); /* Borda colorida */
+    width: 80%; /* Largura do modal */
+    max-width: 500px; /* Largura máxima */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+.modal-content h2 {
+    margin: 0; /* Remove margem */
+    font-size: 1.5em; /* Tamanho do texto */
+    color: var(--primary-color); /* Cor do título */
+}
+
+.modal-content p {
+    margin-top: 15px; /* Margem superior */
+    font-size: 1em; /* Tamanho do texto */
+    color: var(--text-color); /* Cor do texto */
+}
+
+.close {
+    color: var(--highlight-color); /* Cor do botão fechar */
+    float: right; /* Alinha à direita */
+    font-size: 28px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    cursor: pointer; /* Indica que é clicável */
+}
+
+.close:hover,
+.close:focus {
+    color: var(--text-color); /* Muda a cor ao passar o mouse ou focar */
+    text-decoration: none; /* Remove sublinhado */
+    cursor: pointer; /* Cursor de clique */
+}

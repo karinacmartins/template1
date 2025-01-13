@@ -1,0 +1,38 @@
+/* Seção do Header */
+header {
+    position: relative; /* Define a posição do header como relativa para possibilitar o uso de posicionamento de elementos internos */
+    background: url('../images/fundo.jpg') no-repeat center center/cover; /* Define uma imagem de fundo centralizada, sem repetição e com cobertura total */
+    height: 80vh; /* Define a altura do header como 80% da altura da tela */
+    display: flex; /* Define o display como flexbox para facilitar o alinhamento dos elementos internos */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    text-align: center; /* Centraliza o texto dentro do header */
+    color: var(--white-color); /* Define a cor do texto com uma variável CSS (branco) */
+    z-index: 1; /* Coloca o header acima de outros elementos com z-index menor */
+    filter: brightness(1.2) opacity(0.3); /* Aplica brilho aumentado e opacidade reduzida na imagem de fundo */
+}
+
+/* Estilo para o título dentro do header */
+header h1 {
+    font-size: 3rem; /* Aumenta o tamanho da fonte do título */
+    color: #fff; /* Define a cor do texto como branca */
+    text-align: center; /* Centraliza o texto dentro do elemento h1 */
+    margin: 30px; /* Adiciona um espaçamento de 30px em torno do título */
+    letter-spacing: 2px; /* Aumenta o espaçamento entre as letras */
+    line-height: 1.5; /* Define o espaçamento entre as linhas de texto */
+    text-shadow: 
+        -1px -3px 0 black, /* Cria uma sombra no texto simulando uma borda */
+        3px -3px 0 black, 
+        -1px 1px 0 black, 
+        2px 1px 0 black;
+}
+
+/* Estilo para a logo */
+.logo {
+    position: absolute; /* Posiciona a logo de forma absoluta em relação ao header */
+    top: 10px; /* Define que a logo fica a 10px do topo do header */
+    left: 50%; /* Centraliza a logo horizontalmente */
+    transform: translateX(-50%); /* Ajusta a posição para garantir que a logo esteja exatamente no centro */
+    width: 300px; /* Define a largura da logo */
+    z-index: 1001; /* Coloca a logo acima de outros elementos com z-index menor */
+}

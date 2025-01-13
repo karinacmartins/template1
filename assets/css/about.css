@@ -1,0 +1,74 @@
+/* Estilos gerais para a seção "Sobre" */
+.about {
+    display: flex; /* Usa layout flexível para alinhar os elementos */
+    justify-content: space-between; /* Distribui os elementos com espaço entre eles */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    padding: 20px; /* Adiciona espaçamento interno */
+    background: var(--white-color); /* Define o fundo branco */
+}
+
+/* Contêiner principal da seção "Sobre" */
+.sobre-container {
+    display: flex; /* Usa layout flexível */
+    justify-content: space-around; /* Distribui os elementos com espaço ao redor */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    padding: 20px; /* Adiciona espaçamento interno */
+    background: var(--white-color); /* Fundo branco */
+    position: relative; /* Permite posicionar elementos filhos de forma relativa ao contêiner */
+}
+
+/* Estilo para a imagem dentro da seção "Sobre" */
+.sobre-image img {
+    width: 200px; /* Define a largura da imagem */
+    height: 200px; /* Define a altura da imagem */
+    border-radius: 50%; /* Faz a imagem ficar circular */
+    border: 5px solid var(--primary-color); /* Adiciona uma borda de 5px com a cor primária */
+    position: absolute; /* Posiciona a imagem em relação ao contêiner */
+    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner sem distorção */
+    top: -100px; /* Move a imagem para cima */
+    left: calc(50% - 100px); /* Centraliza a imagem horizontalmente */
+    z-index: 3; /* Garante que a imagem fique sobre outros elementos */
+}
+
+/* Estilos para o texto da seção "Sobre" */
+.sobre-text {
+    display: flex; /* Usa layout flexível */
+    justify-content: space-around; /* Distribui os itens com espaço ao redor */
+    padding: 10px; /* Adiciona espaçamento interno */
+}
+
+/* Estilo para o título dentro da seção "Sobre" */
+.title {
+    display: flex; /* Usa layout flexível */
+    flex-direction: column; /* Organiza os elementos em uma coluna */
+    width: 50%; /* Define que o título ocupa metade da largura */
+    color: var(--primary-color); /* Define a cor do texto como a cor primária */
+    font-size: 50px; /* Define o tamanho da fonte */
+}
+
+/* Estilo para a descrição dentro da seção "Sobre" */
+.description {
+    width: 40%; /* Define que a descrição ocupa 40% da largura */
+    padding: 30px; /* Adiciona espaçamento interno */
+    text-align: right; /* Alinha o texto à direita */
+}
+
+/* Estilos para as linhas decorativas dentro da seção "Sobre" */
+.about .line {
+    position: absolute; /* Posiciona a linha de forma absoluta em relação ao contêiner */
+    top: 10px; /* Define a posição no topo */
+    z-index: 2; /* Define a prioridade de exibição abaixo da imagem */
+    width: 100%; /* A linha ocupa 100% da largura do contêiner */
+    height: 5px; /* Define a altura da linha */
+    align-items: center; /* Alinha verticalmente ao centro */
+    background: var(--primary-color); /* Define a cor da linha como a cor primária */
+}
+
+/* Estilo para a segunda linha decorativa */
+.line2 {
+    margin-top: 30px; /* Adiciona um espaçamento acima da linha */
+    width: 100%; /* A linha ocupa 100% da largura do contêiner */
+    height: 5px; /* Define a altura da linha */
+    align-items: center; /* Alinha verticalmente ao centro */
+    background: var(--primary-color); /* Define a cor da linha como a cor primária */
+}
