@@ -9,21 +9,32 @@
 /* Seção superior da "Services" */
 .top-services {
     display: flex; /* Usa layout flexível */
-    align-items: end; /* Alinha os itens ao final verticalmente */
+    align-items: center; /* Alinha os itens ao final verticalmente */
+    flex-direction: column; /* Organiza os itens em coluna */
     justify-content: center; /* Centraliza os itens horizontalmente */
     width: 100%; /* Ocupa toda a largura */
-    height: 100px; /* Define a altura */
+    height: 150px; /* Define a altura */
     background-color: var(--primary-color); /* Define a cor de fundo */
     border-radius: 50% 50% 0 0; /* Adiciona bordas arredondadas somente no topo */
+    
 }
 
 .top-services h2 {
     display: flex; /* Usa layout flexível */
     color: var(--white-color); /* Define a cor do texto como branco */
     font-size: 2.5rem; /* Define o tamanho da fonte */
+    margin: 5px; /* Adiciona margem inferior */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+.top-services p {
+    display: flex; /* Usa layout flexível */
+    color: var(--white-color); /* Define a cor do texto como branco */
+    font-size: 1rem; /* Define o tamanho da fonte */
     margin-bottom: 5px; /* Adiciona margem inferior */
     align-items: center; /* Centraliza verticalmente */
     justify-content: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
 }
 
 /* Seção inferior da "Services" */
@@ -36,6 +47,8 @@
     background-color: var(--primary-color); /* Define a cor de fundo */
     border-radius: 0 0 50% 50%; /* Adiciona bordas arredondadas somente na parte inferior */
 }
+
+
 
 /* Contêiner do carrossel */
 .services-carousel-container {

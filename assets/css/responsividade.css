@@ -63,6 +63,12 @@
         width: 50px; /* Reduz o tamanho do botão */
         height: 50px; /* Reduz a altura do botão */
     }
+
+    .top-services p {
+        font-size: 0.9rem; /* Ajusta o tamanho da fonte do parágrafo */
+        margin: 10px; /* Adiciona margem ao redor do parágrafo */
+        text-align: center;
+    }
 }
 
 /* Responsividade para telas muito pequenas */
